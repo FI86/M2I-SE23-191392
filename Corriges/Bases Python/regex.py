@@ -42,9 +42,9 @@ print(correspondanceTexte("abc"))
 print(correspondanceTexte("abbc"))
 
 # Suppression des zéros de tête d'une adresse IP.
-ip = "216.008.094.196"
-modele = r"\.[0]+"
-resultat = re.sub(modele, ".", ip)
+ip = "006.008.094.196"
+modele = r"\b0+(\d)"
+resultat = re.sub(modele, r"\1", ip)
 print(resultat)
 
 # Trouver un mot dans une chaine de caractères.
@@ -96,3 +96,4 @@ def espace_mot_capitale(chaine):
 print(espace_mot_capitale("Python"))
 print(espace_mot_capitale("PythonExercices"))
 print(espace_mot_capitale("PythonExercicesSolutionPossible"))
+
