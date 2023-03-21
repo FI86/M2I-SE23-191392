@@ -16,7 +16,7 @@ def motsTerminePar(c, chaineTest):
 
 # 3 – Retrouver tous les mots qui commencent par un caractère donné.
 def motCommencePar(c, chaineTest):
-    modele = r"\b[" + c.upper() + c.lower() + r"][a-zA-Z]+\b"
+    modele = r"\b[" + c.upper() + c.lower() + r"]\w*"
     return re.findall(modele, chaineTest)
 
 # 4 - Retrouver tous les mots qui contiennent au moins trois caractères.
