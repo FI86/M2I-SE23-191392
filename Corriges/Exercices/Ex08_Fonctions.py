@@ -15,7 +15,7 @@ def main():
 
     while reponse.upper() != "NON":
         rayon = float(input("Indiquez le rayon d'une sphere : "))
-        print(f"Le volume de la sphere est de : {volumeSphere(int(rayon))}")
+        print(f"Le volume de la sphere est de : {volumeSphere(rayon)}")
 
         reponse = input("Voulez-vous continuer oui / non ? ")
 
